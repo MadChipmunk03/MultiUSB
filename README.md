@@ -11,7 +11,7 @@ a usb device that gets plugged into a computer and over wifi (esp-12e) you contr
 <p float="left">
   <img src="images/Snímek obrazovky 2021-08-06 162437.png" height="250" /> 
   <img src="images/Snímek obrazovky 2021-08-06 163751.png" height="250" />
-  <img src="images/Snímek obrazovky 2021-08-06 163935.png" height="250" />
+  <img src="images/Snímek obrazovky 2021-08-06 164538.png" height="250" />
   <img src="images/SmartSelect_20210802-221822_Chrome.jpg" height="250" /> 
 </p>
 
