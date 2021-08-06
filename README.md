@@ -14,6 +14,7 @@ a usb device that gets plugged into a computer and over wifi (esp-12e) you contr
   <img src="images/Snímek obrazovky 2021-08-06 163935.png" height="250" />
   <img src="images/SmartSelect_20210802-221822_Chrome.jpg" height="250" /> 
 </p>
+
 - PCB gerber files and schematic design
 - .stl and .gcode files for 3D printable casing
 - Arduino code for ATtiny85 and ESP-12e
