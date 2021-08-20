@@ -18,3 +18,27 @@ A usb device that gets plugged into a computer and over wifi (ESP-12e) you contr
 - PCB gerber files and schematic design
 - .stl and .gcode files for 3D printable casing
 - Arduino code for ATtiny85 and ESP-12e
+
+## To-Do:
+### Websites
+- [ ] macro keyboard
+- [ ] website with macros
+- [ ] video controller
+- [ ] presenter
+- [ ] keyboard website
+- [ ] wifi settings
+- [ ] main menu
+
+### Macro commands
+- [ ] REPEAT
+- [ ] REFER (run another macro)
+- [ ] COPY .txt file
+- [ ] WEBSITE
+- [ ] website with output
+- [ ] website with input
+- [ ] website with pause button
+
+### general to-do stuff
+- [ ] use LittleFS for websites, files etc.
+- [ ] make station version
+- [ ] make C# UI application (mostly to make macros)
