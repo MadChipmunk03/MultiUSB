@@ -1,4 +1,4 @@
-# ESPatUSB
+# MultiUSB
 ## General desctiption:
 <p float="left">
   <img src="images/IMG_20210806_114903.jpg" height="200" />
