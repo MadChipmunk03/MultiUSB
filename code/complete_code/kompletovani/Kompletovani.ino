@@ -7,6 +7,8 @@
 #include <SD.h>
 File myFile;*/
 
+/*ok, tak toto je ta změna*/
+
 const byte DNS_PORT = 53;
 IPAddress apIP(172, 217, 28, 1);
 DNSServer dnsServer;
@@ -16,14 +18,16 @@ ESP8266WebServer server(80);
 //#include "MacroEngine.h"
 #include "handleVyber.h"
 
-void handleNotFound() {
+void handleNotFound()
+{
   server.send(404, "text/plain", "404: Not found"); // Send HTTP status 404 (Not Found) when there's no handler for the URI in the request
 }
 
-void setup() {
+void setup()
+{
 
   Serial.begin(115200);
-  Wire.begin();             //ATtiny85 is slave #10
+  Wire.begin(); //ATtiny85 is slave #10
   delay(250);
 
   /*if (!SD.begin(9)) {
@@ -48,14 +52,15 @@ void setup() {
   // provided IP to all DNS request
   dnsServer.start(DNS_PORT, "usb.com", apIP);
 
-  server.on("/", HTTP_GET, handleRoot);        // Call the 'handleRoot' function when a client requests URI "/"
+  server.on("/", HTTP_GET, handleRoot); // Call the 'handleRoot' function when a client requests URI "/"
   server.on("/vyber", HTTP_POST, handleVyber);
-  server.onNotFound(handleNotFound);           // When a client requests an unknown URI (i.e. something other than "/"), call function "handleNotFound"
+  server.onNotFound(handleNotFound); // When a client requests an unknown URI (i.e. something other than "/"), call function "handleNotFound"
 
   server.begin();
 }
 
-void loop() {
+void loop()
+{
   dnsServer.processNextRequest();
   server.handleClient();
 }
