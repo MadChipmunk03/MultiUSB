@@ -1,4 +1,4 @@
-# my-first-app
+# multiusb-ui
 
 ## Project setup
 ```
