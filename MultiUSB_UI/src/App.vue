@@ -4,12 +4,14 @@
     <AppBar />
 
     <v-main>
-
+      <v-btn @click="sendTestGET">Send GET on esp8266/helloWorld</v-btn>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import axios from "axios";
+
 import NavigationDrawer from "./components/NavigationDrawer.vue";
 import AppBar from "./components/AppBar.vue";
 
@@ -18,6 +20,12 @@ export default {
   components: {
     NavigationDrawer,
     AppBar,
+  },
+  methods: {
+    async sendTestGET() {
+      const res = await axios.get("/api/vacation/incomplete", {});
+      console.log("💌", res);
+    },
   },
 };
 </script>
