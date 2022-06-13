@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     async sendTestGET() {
-      const res = await axios.get("/api/vacation/incomplete", {});
+      const res = await axios.get("/api/helloWorld");
       console.log("💌", res);
     },
   },

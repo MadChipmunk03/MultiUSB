@@ -6,7 +6,7 @@ module.exports = {
     allowedHosts: "all",
     proxy: {
       "^/api": {
-        target: "http://localhost:8080",
+        target: "http://esp8266",
         changeOrigin: true,
       },
     },

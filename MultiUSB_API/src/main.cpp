@@ -53,8 +53,8 @@ void restServerRouting() {
         server.send(200, F("text/html"),
             F("Welcome to the REST Web Server"));
     });
-    server.on(F("/helloWorld"), HTTP_GET, getHelloWord);
-    server.on(F("/settings"), HTTP_GET, getSettings);
+    server.on(F("/api/helloWorld"), HTTP_GET, getHelloWord);
+    server.on(F("/api/settings"), HTTP_GET, getSettings);
 }
  
 // Manage not found URL
