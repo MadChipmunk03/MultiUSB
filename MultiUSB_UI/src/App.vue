@@ -4,7 +4,8 @@
     <AppBar />
 
     <v-main>
-      <v-btn @click="sendTestGET">Send GET on esp8266/helloWorld</v-btn>
+      <!-- <v-btn @click="sendTestGET">Send GET on esp8266/helloWorld</v-btn> -->
+      <video-controller />
     </v-main>
   </v-app>
 </template>
@@ -14,12 +15,14 @@ import axios from "axios";
 
 import NavigationDrawer from "./components/NavigationDrawer.vue";
 import AppBar from "./components/AppBar.vue";
+import VideoController from './components/pages/VideoController.vue';
 
 export default {
   name: "App",
   components: {
     NavigationDrawer,
     AppBar,
+    VideoController,
   },
   methods: {
     async sendTestGET() {
