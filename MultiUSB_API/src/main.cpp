@@ -12,6 +12,7 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
  
+//totally not my wifi password
 const char* ssid = "Mobile-A51";
 const char* password = "123456Abc";
  
