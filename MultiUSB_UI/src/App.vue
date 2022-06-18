@@ -5,7 +5,7 @@
 
     <v-main>
       <!-- <v-btn @click="sendTestGET">Send GET on esp8266/helloWorld</v-btn> -->
-      <video-controller />
+      <MainFeatures />
     </v-main>
   </v-app>
 </template>
@@ -15,15 +15,15 @@ import axios from "axios";
 
 import NavigationDrawer from "./components/NavigationDrawer.vue";
 import AppBar from "./components/AppBar.vue";
-import VideoController from './components/pages/VideoController.vue';
+import MainFeatures from "./components/pages/MainFeatures.vue";
 
 export default {
   name: "App",
   components: {
     NavigationDrawer,
     AppBar,
-    VideoController,
-  },
+    MainFeatures
+},
   methods: {
     async sendTestGET() {
       const res = await axios.get("/api/helloWorld");

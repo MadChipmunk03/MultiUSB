@@ -32,23 +32,23 @@ export default {
     <v-card class="px-8">
       <v-card-title class="pl-0">Controls</v-card-title>
       <v-row align="center" class="py-5">
-        <v-btn x-large><v-icon large>mdi-rewind-outline</v-icon></v-btn>
+        <v-btn x-large><v-icon large>mdi-rewind</v-icon></v-btn>
         <v-spacer></v-spacer>
         <v-btn x-large><v-icon large>mdi-play-pause</v-icon></v-btn>
         <v-spacer></v-spacer>
-        <v-btn x-large><v-icon large>mdi-fast-forward-outline</v-icon></v-btn>
+        <v-btn x-large><v-icon large>mdi-fast-forward</v-icon></v-btn>
       </v-row>
       <v-row align="center" class="py-5">
         <v-btn x-large><v-icon large>mdi-fullscreen</v-icon></v-btn>
         <v-spacer></v-spacer>
-        <v-btn x-large><v-icon large>mdi-closed-caption-outline</v-icon></v-btn>
+        <v-btn x-large><v-icon large>mdi-closed-caption</v-icon></v-btn>
         <v-spacer></v-spacer>
-        <v-btn x-large><v-icon large>mdi-volume-minus</v-icon></v-btn>
+        <v-btn x-large><v-icon large>mdi-skip-next</v-icon></v-btn>
       </v-row>
       <v-row align="center" justify="space-around" class="py-5">
         <v-btn x-large block>
           <v-icon large>mdi-mouse</v-icon>
-          &
+          <v-icon class="px-3">mdi-ampersand</v-icon>
           <v-icon large>mdi-keyboard</v-icon>
         </v-btn>
       </v-row>
@@ -56,8 +56,4 @@ export default {
   </v-container>
 </template>
 
-<style>
-.mybtn.v-btn.v-btn {
-  color: red;
-}
-</style>
+<style scope></style>

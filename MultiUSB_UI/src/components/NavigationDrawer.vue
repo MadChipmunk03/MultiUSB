@@ -31,7 +31,7 @@ export default {
 
         <v-list-item>
           <v-list-item-icon>
-            <v-icon>mdi-puzzle</v-icon>
+            <v-icon>mdi-view-grid-plus</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Rozšíření</v-list-item-title>
         </v-list-item>
