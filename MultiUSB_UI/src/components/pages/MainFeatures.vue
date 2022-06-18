@@ -29,6 +29,15 @@ export default {
           title: "USB tlačítko",
           text: "Nastavení kombinací přepínačů pro tlačítko na zařízení",
         },
+        {
+          icon: "mdi-usb",
+          title: "Mouse and keyboard",
+        },
+        {
+          icon: "mdi-account-multiple-plus",
+          title: "2nd player",
+          text: "Key layout for second player for a video game (a bit slow thought)",
+        },
         
       ],
     };
@@ -55,7 +64,7 @@ export default {
     >
       <v-row>
         <v-col class="my-auto px-1" cols="2">
-          <v-icon size="60" color="primary">{{ feature.icon }}</v-icon>
+          <v-icon size="60">{{ feature.icon }}</v-icon>
         </v-col>
         <v-col cols="10">
           <v-card-title class="py-1">{{ feature.title }}</v-card-title>
