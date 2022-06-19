@@ -20,7 +20,7 @@ export default {
           icon: "mdi-youtube-tv",
           title: "Video přehrávač",
           text: "Ovladač pro přehrávání na YouTube",
-          routeName: "VideoController",
+          routeName: "",
         },
         {
           icon: "mdi-presentation",
