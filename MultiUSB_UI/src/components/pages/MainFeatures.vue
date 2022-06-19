@@ -8,44 +8,49 @@ export default {
           icon: "mdi-file-code",
           title: "Makra",
           text: "Spusť sequnci příkazů pro automatizaci rutinních prací",
+          routeName: "",
         },
         {
           icon: "mdi-gesture-tap-button",
           title: "Makro klávesnice",
           text: "Jednoduchý přístup pro neusále používené akce (zkraty, spuštění programu...)",
+          routeName: "",
         },
         {
           icon: "mdi-youtube-tv",
-          title: "Video controller",
+          title: "Video přehrávač",
           text: "Ovladač pro přehrávání na YouTube",
+          routeName: "VideoController",
         },
         {
           icon: "mdi-presentation",
           title: "Prezentér",
           text: "Pro prezentování powerPointu nebo google slides",
+          routeName: "",
         },
         {
           icon: "mdi-dip-switch",
           title: "USB tlačítko",
           text: "Nastavení kombinací přepínačů pro tlačítko na zařízení",
+          routeName: "",
         },
         {
           icon: "mdi-usb",
-          title: "Mouse and keyboard",
+          title: "Myš a klávesnice",
+          routeName: "",
         },
         {
           icon: "mdi-account-multiple-plus",
-          title: "2nd player",
-          text: "Key layout for second player for a video game (a bit slow thought)",
+          title: "2. Hráč",
+          text: "Jednoduché klávesnicové rozložení pro druhého hráče ve hře",
+          routeName: "",
         },
-        
       ],
     };
   },
   methods: {
-    removeThis(value) {
-      console.log(value);
-      this.$router.push("/" + value);
+    changeRoute(routeName) {
+      this.$router.push({ name: routeName });
     },
   },
 };
@@ -58,13 +63,13 @@ export default {
     <v-card
       v-for="feature in features"
       :key="feature.text"
-      @click="removeThis(feature.text)"
+      @click="changeRoute(feature.routeName)"
       class="mb-6 px-8"
       elevation="3"
     >
       <v-row>
         <v-col class="my-auto px-1" cols="2">
-          <v-icon size="60">{{ feature.icon }}</v-icon>
+          <v-icon size="60" color="primary">{{ feature.icon }}</v-icon>
         </v-col>
         <v-col cols="10">
           <v-card-title class="py-1">{{ feature.title }}</v-card-title>

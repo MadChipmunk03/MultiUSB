@@ -10,7 +10,7 @@ export default {
 <template>
   <v-app-bar color="primary" elevation="4" height="65" app>
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    <v-toolbar-title>Funkce</v-toolbar-title>
+    <v-toolbar-title>Vlastnosti</v-toolbar-title>
   </v-app-bar>
 </template>
 

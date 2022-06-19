@@ -5,7 +5,8 @@
 
     <v-main>
       <!-- <v-btn @click="sendTestGET">Send GET on esp8266/helloWorld</v-btn> -->
-      <MainFeatures />
+      <!-- <MainFeatures /> -->
+		<router-view></router-view>
     </v-main>
   </v-app>
 </template>
@@ -15,14 +16,14 @@ import axios from "axios";
 
 import NavigationDrawer from "./components/NavigationDrawer.vue";
 import AppBar from "./components/AppBar.vue";
-import MainFeatures from "./components/pages/MainFeatures.vue";
+// import MainFeatures from "./components/pages/MainFeatures.vue";
 
 export default {
   name: "App",
   components: {
     NavigationDrawer,
     AppBar,
-    MainFeatures
+    // MainFeatures
 },
   methods: {
     async sendTestGET() {
