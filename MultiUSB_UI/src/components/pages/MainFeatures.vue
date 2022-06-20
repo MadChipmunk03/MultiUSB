@@ -55,7 +55,7 @@ export default {
     },
   },
   created() {
-    this.$store.commit('changeAppBarTitle', 'Features');
+    this.$store.commit('changeAppBarTitle', 'Vlastnosti');
   }
 };
 </script>
