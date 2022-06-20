@@ -1,12 +1,15 @@
 {
   "folders": [
-	{
-		"path": "..\\.."
-	},
-	{
-		"name": "MultiUSB_API",
-		"path": "..\\..\\MultiUSB_API"
-	}
-],
+    {
+      "path": "..\\.."
+    },
+    {
+      "name": "MultiUSB_API",
+      "path": "..\\..\\MultiUSB_API"
+    },
+    {
+      "path": ".."
+    }
+  ],
   "settings": {}
 }
