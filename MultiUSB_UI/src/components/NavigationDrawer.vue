@@ -1,15 +1,18 @@
 <script>
 export default {
-  data() {
-    return {
-      drawer: true,
-    };
-  },
+  // data() {
+  //   return {
+  //     drawer: true,
+  //   };
+  // },
+  // created(){
+  //   this.drawer = 
+  // }
 };
 </script>
 
 <template>
-  <v-navigation-drawer v-model="drawer" app>
+  <v-navigation-drawer v-model="this.$store.state.drawer" app>
     <v-divider></v-divider>
     <v-list nav>
       <v-list-item-group>

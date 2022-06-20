@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     count: 0,
     appBarTitle: "",
+    drawer: true
   },
   mutations: {
     increment(state) {
@@ -15,5 +16,8 @@ export default new Vuex.Store({
     changeAppBarTitle(state, title) {
       state.appBarTitle = title;
     },
+    toggleDrawer(state){
+      state.drawer = !state.drawer
+    }
   },
 });
