@@ -1,17 +1,11 @@
 <script>
-export default {
-  data() {
-    return {
-      drawer: this.$store.state.drawer,
-    };
-  },
-};
+export default {};
 </script>
 
 <template>
   <v-navigation-drawer v-model="$store.state.drawer" app>
     <v-divider></v-divider>
-    <v-img class="ma-4"  src="../assets/drawer.png"></v-img>
+    <v-img class="ma-4" src="../assets/drawer.png"></v-img>
     <v-divider></v-divider>
     <v-list nav>
       <v-list-item-group>
