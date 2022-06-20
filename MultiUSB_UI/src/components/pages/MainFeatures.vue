@@ -8,48 +8,49 @@ export default {
           icon: "mdi-file-code",
           title: "Makra",
           text: "Spusť sequnci příkazů pro automatizaci rutinních prací",
-          routeName: "",
+          routeName: "MacrosFeature",
         },
         {
           icon: "mdi-gesture-tap-button",
           title: "Makro klávesnice",
           text: "Jednoduchý přístup pro neusále používené akce (zkraty, spuštění programu...)",
-          routeName: "",
+          routeName: "MacroKeyboardFeature",
         },
         {
           icon: "mdi-youtube-tv",
           title: "Video přehrávač",
           text: "Ovladač pro přehrávání na YouTube",
-          routeName: "",
+          routeName: "VideoController",
         },
         {
           icon: "mdi-presentation",
           title: "Prezentér",
           text: "Pro prezentování powerPointu nebo google slides",
-          routeName: "",
+          routeName: "PresenterFeature",
         },
         {
           icon: "mdi-dip-switch",
           title: "USB tlačítko",
           text: "Nastavení kombinací přepínačů pro tlačítko na zařízení",
-          routeName: "",
+          routeName: "ButtonFeature",
         },
         {
           icon: "mdi-usb",
           title: "Myš a klávesnice",
-          routeName: "",
+          routeName: "MouseAndKeyboardFeature",
         },
         {
           icon: "mdi-account-multiple-plus",
           title: "2. Hráč",
           text: "Jednoduché klávesnicové rozložení pro druhého hráče ve hře",
-          routeName: "",
+          routeName: "SecondPlayerFeature",
         },
       ],
     };
   },
   methods: {
     changeRoute(routeName) {
+      console.log(routeName)
       this.$router.push({ name: routeName });
     },
   },

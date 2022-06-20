@@ -3,7 +3,7 @@
 export default {
   data() {
     return {
-      message: "Hello Wrold!",
+      message: "mouse and keyboard works!",
     };
   },
 };
