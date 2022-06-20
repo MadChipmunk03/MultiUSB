@@ -5,6 +5,9 @@ export default {
       message: "Hello Wrold!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Video přahárač');
+  }
 };
 </script>
 

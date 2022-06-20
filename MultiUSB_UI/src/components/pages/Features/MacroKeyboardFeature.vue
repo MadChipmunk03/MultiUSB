@@ -6,6 +6,9 @@ export default {
       message: "Macro keyboard works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Makro klávesnice');
+  }
 };
 </script>
 

@@ -5,6 +5,9 @@ export default {
       message: "Second player works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Druhý hráč');
+  }
 };
 </script>
 

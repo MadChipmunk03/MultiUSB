@@ -6,6 +6,9 @@ export default {
       message: "Presenter works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Prezentér');
+  }
 };
 </script>
 

@@ -5,6 +5,9 @@ export default {
       message: "Button Works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'USB tlačítko');
+  }
 };
 </script>
 

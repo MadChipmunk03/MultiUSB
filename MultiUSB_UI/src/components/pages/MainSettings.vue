@@ -6,6 +6,9 @@ export default {
       message: "Settings works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Nastavení');
+  }
 };
 </script>
 

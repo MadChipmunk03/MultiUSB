@@ -54,6 +54,9 @@ export default {
       this.$router.push({ name: routeName });
     },
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Features');
+  }
 };
 </script>
 

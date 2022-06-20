@@ -5,6 +5,9 @@ export default {
       message: "Macros works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Makra');
+  }
 };
 </script>
 

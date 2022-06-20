@@ -6,6 +6,9 @@ export default {
       message: "Extensions works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Rozšíření');
+  }
 };
 </script>
 

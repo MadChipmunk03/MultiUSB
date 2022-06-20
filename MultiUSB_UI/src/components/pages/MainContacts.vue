@@ -6,6 +6,9 @@ export default {
       message: "contacts works!",
     };
   },
+  created() {
+    this.$store.commit('changeAppBarTitle', 'Kontakty');
+  }
 };
 </script>
 
