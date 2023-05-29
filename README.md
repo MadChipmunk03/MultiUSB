@@ -1,5 +1,5 @@
 # MultiUSB
-> **_NOTE:_**  This is a poorly working version. A fully working proof-of-concept version can be found in versions.
+> **_Warning_** This is a poorly working version. A fully working proof-of-concept version can be found in versions.
 ## General desctiption:
 <p float="left">
   <img src="images/IMG_20210806_114903.jpg" height="200" />
